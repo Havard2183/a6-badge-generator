@@ -191,8 +191,8 @@
             .line-h { position: absolute; top: 148.5mm; left: 0; width: 100%; border-top: 1.5pt dotted #888; z-index: 10; }
             .line-v { position: absolute; left: 105mm; top: 0; height: 100%; border-left: 1.5pt dotted #888; z-index: 10; }
             .quarter { position: absolute; width: 105mm; height: 148.5mm; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; text-align: center; }
-            .top-left { top: 0; left: 0; transform: rotate(180deg); justify-content: center; padding: 8mm 5mm 14mm 5mm; } /* bottom +6mm (inner after rotation) */
-            .top-right { top: 0; left: 105mm; transform: rotate(180deg); justify-content: center; padding: 8mm 5mm 14mm 5mm; } /* bottom +6mm */
+            .top-left { top: 0; left: 0; transform: rotate(180deg); justify-content: center; padding: 8mm 5mm 14mm 12mm; }  /* left +6mm for inner right, bottom +6mm for inner top */
+            .top-right { top: 0; left: 105mm; transform: rotate(180deg); justify-content: center; padding: 8mm 12mm 14mm 5mm; }  /* right +6mm for inner left, bottom +6mm for inner top */
             .bottom-left { top: 148.5mm; left: 0; justify-content: space-between; padding: 14mm 14mm 8mm 5mm; } /* top and right +6mm */
             .bottom-right { top: 148.5mm; left: 105mm; justify-content: space-between; padding: 14mm 5mm 8mm 14mm; }  /* top and left +6mm */
             .badge-logo { width: 90px !important; }
