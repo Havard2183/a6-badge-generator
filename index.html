@@ -238,9 +238,9 @@
 
         <div class="setup-field">
             <label for="setup-info">Info Box Text</label>
-            <span class="field-hint">Appears on the badge back below the organisation name. Lines longer than 34 characters will wrap automatically. Maximum 16 printed lines total.</span>
+            <span class="field-hint">Appears on the badge back below the organisation name. Lines longer than 38 characters will wrap automatically. Maximum 20 printed lines total.</span>
             <textarea id="setup-info" placeholder="e.g. Please keep this badge visible at all times.&#10;Return to reception when leaving." rows="6"></textarea>
-            <div class="char-counter" id="info-counter">0 / 16 printed lines</div>
+            <div class="char-counter" id="info-counter">0 / 20 printed lines</div>
             <div id="info-line-warning" style="display:none; margin-top:6px; padding:8px 12px; background:#fdecea; border:1px solid #e74c3c; border-radius:6px; color:#c0392b; font-size:0.82rem;">
                 Too many lines — please delete some text or line breaks.
             </div>
@@ -302,8 +302,8 @@
 
 <script>
     // ===================== BRANDING PARAMS =====================
-    const INFO_LINE_WIDTH = 34;  // max characters per printed line
-    const INFO_MAX_LINES  = 16;  // max total printed lines (after reflow)
+    const INFO_LINE_WIDTH = 38;  // max characters per printed line
+    const INFO_MAX_LINES  = 20;  // max total printed lines (after reflow)
 
     let brandLogo = '';
     let brandOrg  = '';
