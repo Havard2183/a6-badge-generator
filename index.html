@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pro Badge Maker</title>
+    <title>Pro Badge Generator</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.js"></script>
@@ -213,7 +213,7 @@
 <!-- ===================== SETUP SCREEN ===================== -->
 <div id="setup-screen">
     <div id="setup-card">
-        <h2>Badge Maker Setup</h2>
+        <h2>Badge Generator Setup</h2>
         <p class="setup-sub">Enter your organisation's details. Once saved, the page URL will update so you can bookmark it — you won't need to fill this in again.</p>
 
         <div id="setup-error"></div>
@@ -331,7 +331,7 @@
         brandInfo = params.info;
         document.querySelectorAll('.brand-logo-img').forEach(el => el.src = brandLogo);
         document.getElementById('header-logo').src = brandLogo;
-        document.title = brandOrg + ' – Badge Maker';
+        document.title = brandOrg + ' – Badge Generator';
     }
 
     function showSetup(isEdit) {
@@ -453,7 +453,7 @@
         }
     }
 
-    // ===================== BADGE MAKER LOGIC =====================
+    // ===================== BADGE GENERATOR LOGIC =====================
     let currentType = 'Visitor';
     let currentActiveRow = null;
     let stream = null;
